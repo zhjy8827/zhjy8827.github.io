@@ -15,13 +15,16 @@
 
 
 
+<meta name="description" content="代码测试1 cjsj&amp;lt;-read.table(“cjsj1.csv”,header = TRUE,sep = “,”)cjsj$ASH1&amp;lt;-cjsj$ASH10.01cjsj$RHOB&amp;lt;-(cjsj$RHOB-2.75cjsj$ASH1)/(1-cjsj$ASH1)cjsj$GR&amp;lt;-(cjsj$GR-72.66*cjsj$ASH1)/(1-cjsj$ASH1)library">
 <meta property="og:type" content="article">
 <meta property="og:title" content="frist">
 <meta property="og:url" content="http://yoursite.com/2018/06/17/frist-1/index.html">
 <meta property="og:site_name" content="ZhangJUY's Blog">
-<meta property="og:updated_time" content="2018-06-17T09:16:49.362Z">
+<meta property="og:description" content="代码测试1 cjsj&amp;lt;-read.table(“cjsj1.csv”,header = TRUE,sep = “,”)cjsj$ASH1&amp;lt;-cjsj$ASH10.01cjsj$RHOB&amp;lt;-(cjsj$RHOB-2.75cjsj$ASH1)/(1-cjsj$ASH1)cjsj$GR&amp;lt;-(cjsj$GR-72.66*cjsj$ASH1)/(1-cjsj$ASH1)library">
+<meta property="og:updated_time" content="2018-06-17T11:06:22.760Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="frist">
+<meta name="twitter:description" content="代码测试1 cjsj&amp;lt;-read.table(“cjsj1.csv”,header = TRUE,sep = “,”)cjsj$ASH1&amp;lt;-cjsj$ASH10.01cjsj$RHOB&amp;lt;-(cjsj$RHOB-2.75cjsj$ASH1)/(1-cjsj$ASH1)cjsj$GR&amp;lt;-(cjsj$GR-72.66*cjsj$ASH1)/(1-cjsj$ASH1)library">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -292,7 +295,23 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <p>代码测试1<br> cjsj&lt;-read.table(“cjsj1.csv”,header = TRUE,sep = “,”)<br>cjsj$ASH1&lt;-cjsj$ASH1<em>0.01<br>cjsj$RHOB&lt;-(cjsj$RHOB-2.75</em>cjsj$ASH1)/(1-cjsj$ASH1)<br>cjsj$GR&lt;-(cjsj$GR-72.66*cjsj$ASH1)/(1-cjsj$ASH1)<br>library(vioplot)<br>opar&lt;-par(no.readonly = TRUE)<br>par(mfrow=c(2,4))<br>with(cjsj,{<br>  x1&lt;-CNL[TYPE==1&amp;CNL&gt;=35&amp;CNL&lt;=75]<br>  x2&lt;-CNL[TYPE==2&amp;CNL&gt;=35&amp;CNL&lt;=75]<br>  x3&lt;-CNL[TYPE==3&amp;CNL&gt;=35&amp;CNL&lt;=75]<br>  vioplot(x1,x2,x3,<br>          names=c(“TYPE1”,”TYPE2”,”TYPE3”),col = “darkgreen”<br>         )</p>
+<p>  title(“TYPE and CNL”,ylab = “CNL”)</p>
+<p>  x1&lt;-C13[TYPE==1]<br>  x2&lt;-C13[TYPE==2]<br>  x3&lt;-C13[TYPE==3]<br>  vioplot(x1,x2,x3,<br>         names=c(“TYPE1”,”TYPE2”,”TYPE3”),col = “darkgreen”<br>         )</p>
+<p>  title(“TYPE and C13”,ylab = “C13”)</p>
+<p>  x1&lt;-C24[TYPE==1]<br>  x2&lt;-C24[TYPE==2]<br>  x3&lt;-C24[TYPE==3]<br>  vioplot(x1,x2,x3,<br>         names=c(“TYPE1”,”TYPE2”,”TYPE3”),col = “darkgreen”<br>         )</p>
+<p>  title(“TYPE and C24”,ylab = “C24”)</p>
+<p>  x1&lt;-DT[TYPE==1&amp;DT&gt;=350]<br>  x2&lt;-DT[TYPE==2&amp;DT&gt;=350]<br>  x3&lt;-DT[TYPE==3&amp;DT&gt;=350]<br>  vioplot(x1,x2,x3,<br>         names=c(“TYPE1”,”TYPE2”,”TYPE3”),col = “darkgreen”<br>         )</p>
+<p>  title(“TYPE and DT”,ylab = “DT”)</p>
+<p>  x1&lt;-LLD[TYPE==1&amp;LLD&lt;=3000]<br>  x2&lt;-LLD[TYPE==2&amp;LLD&lt;=3000]<br>  x3&lt;-LLD[TYPE==3&amp;LLD&lt;=3000]<br>  vioplot(x1,x2,x3,<br>         names=c(“TYPE1”,”TYPE2”,”TYPE3”),col = “darkgreen”<br>         )</p>
+<p>  title(“TYPE and LLD”,ylab = “LLD”)</p>
+<p>  x1&lt;-LLS[TYPE==1 &amp;LLS&lt;=2000]<br>  x2&lt;-LLS[TYPE==2 &amp;LLS&lt;=2000]<br>  x3&lt;-LLS[TYPE==3 &amp;LLS&lt;=2000]<br>  vioplot(x1,x2,x3,<br>         names=c(“TYPE1”,”TYPE2”,”TYPE3”),col = “darkgreen”<br>         )</p>
+<p>  title(“TYPE and LLS”,ylab = “LLS”)</p>
+<p>  x1&lt;-GR[TYPE==1&amp;GR&gt;=0&amp;GR&lt;=25]<br>  x2&lt;-GR[TYPE==2&amp;GR&gt;=0&amp;GR&lt;=25]<br>  x3&lt;-GR[TYPE==3&amp;GR&gt;=0&amp;GR&lt;=25]<br>  vioplot(x1,x2,x3,<br>          names=c(“TYPE1”,”TYPE2”,”TYPE3”),col = “darkgreen”<br>          )</p>
+<p>  title(“TYPE and GR”,ylab = “GR”)</p>
+<p>  x1&lt;-RHOB[TYPE==1&amp;RHOB&lt;=1.4&amp;RHOB&gt;=1]<br>  x2&lt;-RHOB[TYPE==2&amp;RHOB&lt;=1.4&amp;RHOB&gt;=1]<br>  x3&lt;-RHOB[TYPE==3&amp;RHOB&lt;=1.4&amp;RHOB&gt;=1]<br>  vioplot(x1,x2,x3,<br>          names=c(“TYPE1”,”TYPE2”,”TYPE3”),col = “darkgreen”<br>          )</p>
+<p>  title(“TYPE and RHOB”,ylab = “RHOB”)<br>})<br>par(opar)</p>
+
       
     </div>
     
@@ -303,7 +322,7 @@
         <p><span>本文标题:</span><a href="/2018/06/17/frist-1/">frist</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">ZhangJUY</a></p>
         <p><span>发布时间:</span>2018-06-17, 17:16:49</p>
-        <p><span>最后更新:</span>2018-06-17, 17:16:49</p>
+        <p><span>最后更新:</span>2018-06-17, 19:06:22</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/06/17/frist-1/" title="frist">http://yoursite.com/2018/06/17/frist-1/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/06/17/frist-1/　　作者: ZhangJUY" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
