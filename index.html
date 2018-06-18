@@ -329,6 +329,33 @@
 
 
 
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js'></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "Gw6TcIDH67KbTf36P07G3Itp-gzGzoHsz",
+            app_key: "XOKvy8WOFTgB47ozYUxmecGf",
+            placeholder: "Just go go",
+            avatar: "mm",
+            avatar_cdn: "undefined",
+            pageSize: undefined
+    });
+</script>
+  </section>
+
   
     <article id="post-frist" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -467,6 +494,33 @@ par(opar)
 
 
 
+
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js'></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "Gw6TcIDH67KbTf36P07G3Itp-gzGzoHsz",
+            app_key: "XOKvy8WOFTgB47ozYUxmecGf",
+            placeholder: "Just go go",
+            avatar: "mm",
+            avatar_cdn: "undefined",
+            pageSize: undefined
+    });
+</script>
+  </section>
 
   
   

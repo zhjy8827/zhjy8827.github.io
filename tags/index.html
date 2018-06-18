@@ -418,32 +418,40 @@
 
 
 
-  
-  <!-- Gitment评论插件通用代码 -->
-<div id="git"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  owner: "zhjy8827",//github用户名
-  repo: "zhjy8827.github.io",//用户存储评论的github项目名称
-  oauth: {
-    client_id: "26be2c7e5c2ad8266337",//注册OAuth Application时生产的ClinetID
-    client_secret:"9411df9cef5f6c6ca91bb755f6dfa6705b4a3c3d",//注册OAuth Application时生成的Client Secret
-  },
-})
-gitment.render('git')
-</script>
-<!-- Gitment代码结束 -->
-  
-
-
-
 
 
     <script>
         
     </script>
+
+
+
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js'></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "Gw6TcIDH67KbTf36P07G3Itp-gzGzoHsz",
+            app_key: "XOKvy8WOFTgB47ozYUxmecGf",
+            placeholder: "Just go go",
+            avatar: "mm",
+            avatar_cdn: "undefined",
+            pageSize: undefined
+    });
+</script>
+  </section>
 </div>
       <footer id="footer">
     <div class="outer">
