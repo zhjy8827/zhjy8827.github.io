@@ -521,6 +521,31 @@ par(opar)
     </script>
 
 
+
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "Gw6TcIDH67KbTf36P07G3Itp-gzGzoHsz",
+            app_key: "XOKvy8WOFTgB47ozYUxmecGf",
+            placeholder: "说点什么吧!",
+            avatar:""
+        });
+    }
+</script>
+  </section>
 </div>
       <footer id="footer">
     <div class="outer">
