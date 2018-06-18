@@ -367,6 +367,28 @@ QQ :1243844173   WeChat :ace081462
 
 
     
+        <section id="comments">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function(){
+            this.page.url = 'https://zhjy8827.github.io/about/index.html';
+            this.page.identifier = 'about/index.html';
+        };
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = '//zhangjuny.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
+
+</section>
+
+
+    
 
 
 
@@ -375,42 +397,13 @@ QQ :1243844173   WeChat :ace081462
     <script>
         
     </script>
-
-
-
-  <section id="comments" class="comments">
-    <style>
-      .comments{margin:30px;padding:10px;background:#fff}
-      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment" class="comment"></div>
-<script src="//cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js'></script>
-<script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-   new Valine({
-            av: AV,
-            el: '#vcomment',
-            notify: notify,
-            verify: verify,
-            app_id: "Gw6TcIDH67KbTf36P07G3Itp-gzGzoHsz",
-            app_key: "XOKvy8WOFTgB47ozYUxmecGf",
-            placeholder: "瞎白话",
-            avatar: "",
-            avatar_cdn: "https://sdn.geekzu.org/avatar/",
-            pageSize: 15
-    });
-</script>
-  </section>
 </div>
       <footer id="footer">
     <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2016-2018 ZhangJUNY
+                2018 ZhangJUNY
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>

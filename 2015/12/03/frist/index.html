@@ -15,12 +15,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZhangJUNY's Blog">
-<meta property="og:url" content="https://zhjy8827.github.io/archives/2018/index.html">
+<meta name="description" content="Welcome to Hexo! This is your very first post.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="https://zhjy8827.github.io/2015/12/03/frist/index.html">
 <meta property="og:site_name" content="ZhangJUNY's Blog">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post.">
+<meta property="og:updated_time" content="2018-06-18T13:01:57.802Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZhangJUNY's Blog">
+<meta name="twitter:title" content="Hello World">
+<meta name="twitter:description" content="Welcome to Hexo! This is your very first post.">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -52,7 +56,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives: 2018 | ZhangJUNY&#39;s Blog</title>
+<title>Hello World | ZhangJUNY&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -62,8 +66,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -257,59 +261,270 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-frist" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/06/17/frist/" class="archive-article-date">
-      <time datetime="2018-06-17T06:46:45.000Z" itemprop="datePublished">06-17</time>
+    <div class="article-meta">
+      <a href="/2015/12/03/frist/" class="article-date">
+      <time datetime="2015-12-02T16:00:00.000Z" itemprop="datePublished">2015-12-03</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/17/frist/">frist</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hello World
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
-        </div>
+        
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>这是我第一篇文章，测试所用。2</p>
+<pre><code> cjsj&lt;-read.table(&quot;cjsj1.csv&quot;,header = TRUE,sep = &quot;,&quot;)
+cjsj$ASH1&lt;-cjsj$ASH1*0.01
+cjsj$RHOB&lt;-(cjsj$RHOB-2.75*cjsj$ASH1)/(1-cjsj$ASH1)
+cjsj$GR&lt;-(cjsj$GR-72.66*cjsj$ASH1)/(1-cjsj$ASH1)
+library(vioplot)
+opar&lt;-par(no.readonly = TRUE)
+par(mfrow=c(2,4))
+with(cjsj,{
+  x1&lt;-CNL[TYPE==1&amp;CNL&gt;=35&amp;CNL&lt;=75]
+  x2&lt;-CNL[TYPE==2&amp;CNL&gt;=35&amp;CNL&lt;=75]
+  x3&lt;-CNL[TYPE==3&amp;CNL&gt;=35&amp;CNL&lt;=75]
+  vioplot(x1,x2,x3,
+          names=c(&quot;TYPE1&quot;,&quot;TYPE2&quot;,&quot;TYPE3&quot;),col = &quot;darkgreen&quot;
+         )
+
+  title(&quot;TYPE and CNL&quot;,ylab = &quot;CNL&quot;)
+
+  x1&lt;-C13[TYPE==1]
+  x2&lt;-C13[TYPE==2]
+  x3&lt;-C13[TYPE==3]
+  vioplot(x1,x2,x3,
+         names=c(&quot;TYPE1&quot;,&quot;TYPE2&quot;,&quot;TYPE3&quot;),col = &quot;darkgreen&quot;
+         )
+
+  title(&quot;TYPE and C13&quot;,ylab = &quot;C13&quot;)
+
+  x1&lt;-C24[TYPE==1]
+  x2&lt;-C24[TYPE==2]
+  x3&lt;-C24[TYPE==3]
+  vioplot(x1,x2,x3,
+         names=c(&quot;TYPE1&quot;,&quot;TYPE2&quot;,&quot;TYPE3&quot;),col = &quot;darkgreen&quot;
+         )
+
+  title(&quot;TYPE and C24&quot;,ylab = &quot;C24&quot;)
+
+  x1&lt;-DT[TYPE==1&amp;DT&gt;=350]
+  x2&lt;-DT[TYPE==2&amp;DT&gt;=350]
+  x3&lt;-DT[TYPE==3&amp;DT&gt;=350]
+  vioplot(x1,x2,x3,
+         names=c(&quot;TYPE1&quot;,&quot;TYPE2&quot;,&quot;TYPE3&quot;),col = &quot;darkgreen&quot;
+         )
+
+  title(&quot;TYPE and DT&quot;,ylab = &quot;DT&quot;)
+
+  x1&lt;-LLD[TYPE==1&amp;LLD&lt;=3000]
+  x2&lt;-LLD[TYPE==2&amp;LLD&lt;=3000]
+  x3&lt;-LLD[TYPE==3&amp;LLD&lt;=3000]
+  vioplot(x1,x2,x3,
+         names=c(&quot;TYPE1&quot;,&quot;TYPE2&quot;,&quot;TYPE3&quot;),col = &quot;darkgreen&quot;
+         )
+
+  title(&quot;TYPE and LLD&quot;,ylab = &quot;LLD&quot;)
+
+  x1&lt;-LLS[TYPE==1 &amp;LLS&lt;=2000]
+  x2&lt;-LLS[TYPE==2 &amp;LLS&lt;=2000]
+  x3&lt;-LLS[TYPE==3 &amp;LLS&lt;=2000]
+  vioplot(x1,x2,x3,
+         names=c(&quot;TYPE1&quot;,&quot;TYPE2&quot;,&quot;TYPE3&quot;),col = &quot;darkgreen&quot;
+         )
+
+  title(&quot;TYPE and LLS&quot;,ylab = &quot;LLS&quot;)
+
+  x1&lt;-GR[TYPE==1&amp;GR&gt;=0&amp;GR&lt;=25]
+  x2&lt;-GR[TYPE==2&amp;GR&gt;=0&amp;GR&lt;=25]
+  x3&lt;-GR[TYPE==3&amp;GR&gt;=0&amp;GR&lt;=25]
+  vioplot(x1,x2,x3,
+          names=c(&quot;TYPE1&quot;,&quot;TYPE2&quot;,&quot;TYPE3&quot;),col = &quot;darkgreen&quot;
+          )
+
+  title(&quot;TYPE and GR&quot;,ylab = &quot;GR&quot;)
+
+  x1&lt;-RHOB[TYPE==1&amp;RHOB&lt;=1.4&amp;RHOB&gt;=1]
+  x2&lt;-RHOB[TYPE==2&amp;RHOB&lt;=1.4&amp;RHOB&gt;=1]
+  x3&lt;-RHOB[TYPE==3&amp;RHOB&lt;=1.4&amp;RHOB&gt;=1]
+  vioplot(x1,x2,x3,
+          names=c(&quot;TYPE1&quot;,&quot;TYPE2&quot;,&quot;TYPE3&quot;),col = &quot;darkgreen&quot;
+          )
+
+  title(&quot;TYPE and RHOB&quot;,ylab = &quot;RHOB&quot;)
+})
+par(opar)
+</code></pre>
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2015/12/03/frist/">Hello World</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">ZhangJUNY</a></p>
+        <p><span>发布时间:</span>2015-12-03, 00:00:00</p>
+        <p><span>最后更新:</span>2018-06-18, 21:01:57</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2015/12/03/frist/" title="Hello World">https://zhjy8827.github.io/2015/12/03/frist/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://zhjy8827.github.io/2015/12/03/frist/　　作者: ZhangJUNY" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2015/12/03/hello-world/">
+                    Hello World
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Hello World　| ZhangJUNY's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+        <section id="comments">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function(){
+            this.page.url = 'https://zhjy8827.github.io/2015/12/03/frist/';
+            this.page.identifier = '2015/12/03/frist/';
+        };
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = '//zhangjuny.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
+
+</section>
+
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2015/12/03/hello-world/" title="下一篇: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2015/12/03/frist/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/03/hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2016-2018 ZhangJUNY
+                2018 ZhangJUNY
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
