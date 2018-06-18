@@ -271,6 +271,15 @@
       <time datetime="2018-06-17T09:46:20.066Z" itemprop="datePublished">2018-06-17</time>
 </a>
 
+ 
+    <a href="/2018/06/17/hello-world/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2018/06/17/hello-world/"></span>
+        
+    </a>
 
     </div>
   
@@ -335,6 +344,15 @@
       <time datetime="2018-06-17T06:46:45.000Z" itemprop="datePublished">2018-06-17</time>
 </a>
 
+ 
+    <a href="/2018/06/17/frist/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2018/06/17/frist/"></span>
+        
+    </a>
 
     </div>
   
@@ -519,6 +537,26 @@ par(opar)
         })
     </script>
 
+
+    
+
+    
+        <script id="dsq-count-scr" src="//zhangjuny.disqus.com/count.js" async></script>
+        <script>
+            if ($(".left-col").is(":visible")) {
+                var $disqusCount = $(".disqus-comment-count");
+                $disqusCount.bind("DOMNodeInserted", function(e) {
+                    var num = $(this).text().replace(/[^0-9]/ig,"");
+                    if (num > 0) {
+                        $(this).siblings(".count-comment").text(num);
+                    }
+                    $(this).remove();
+                })
+            } else {
+                $(".disqus-comment-count").remove();
+            }
+        </script>
+     
 
 
 
